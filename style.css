@@ -15,13 +15,47 @@ header {
     text-align: center;
 }
 
+#navbar:hover {
+    font-weight: bold;
+    background-color: darkturquoise;
+}
 
+* {
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;
+}
 
+img[target = _dokkan]{
+    border-radius: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p::first-letter {
+    font-size: 30px;
+}
+
+section h2 {
+    background-color: palegreen;
+}
+
+section > h3 {
+    background-color: lavenderblush;
+}
+
+br ~ h3 {
+    padding: 15px;
+}
+
+br + p {
+    font-family: 'Courier New', Courier, monospace;
+}
 
 
 /* Header styles */
 
-h1 {
+h1, h2 {
     color: rgb(255,165,0); /*orange*/
 }
 
