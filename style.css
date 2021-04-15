@@ -37,11 +37,11 @@ p::first-letter {
 }
 
 section h2 {
-    background-color: palegreen;
+    background-color: #98fb98;
 }
 
 section > h3 {
-    background-color: lavenderblush;
+    background-color: hsl(340, 100, 97);
 }
 
 br ~ h3 {
