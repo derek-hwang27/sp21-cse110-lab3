@@ -4,20 +4,39 @@
         <title>Days in the life of Derek Hwang</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
         <link rel = "icon" type = "image/ico" href = "images/Derek.png">
+        <link rel = "stylesheet" href="style.css">
     </head>
     <body>
-        <header id = "top">
+        <style>
+            li:hover {
+                color: rgb(66, 1, 66);
+                font-weight: bold;
+                font-size: large;
+            }
+
+            p:active {
+                background-color: lightcoral;
+                font-weight: bold;
+            }
+        </style>
+
+        <header id = "top" style = "display: inline;">
             <div id = "banner">
-                <img id = "bannerImg" src = "images/banner_image.jpg" alt = "banner">
+                <img id = "bannerImg" src = "images/banner_image.jpg" alt = "banner" style = "max-width: fit-content;">
             </div>
 
-            <nav id = "navbar">
-                <h1>Days in the life of Derek Hwang</h1>
+            <nav id = "navbar" style = "display: inline;">
+                <h1 class = "Header">Days in the life of Derek Hwang</h1>
                 
-                <h2><span>-- <a href = "#4/7/21">4/7/21 | </a></span>
-                <span><a href = "#4/6/21">4/6/21 | </a></span>
-                <span><a href = "#4/5/21">4/5/21</a> --</span></h2>
+                <ul class = "Navigation">
+                    <li><a class = "NavigationItem" href = "#4/7/21">4/7/21</a></li>
+                    <li><a class = "NavigationItem" href = "#4/6/21">4/6/21</a></li>
+                    <li><a class = "NavigationItem" href = "#4/5/21">4/5/21</a></li>
+                </ul>
+                
             </nav>
         </header>
         
@@ -29,17 +48,17 @@
                 <h1> What's Derek been up to? 🤔 </h1>
             </div>
 
-            <section id = "4/7/21">
+            <section class = "EntryGrid" id = "4/7/21">
                 <h2 id = "4/7/21_title">Living in a Society - 4/7/21</h2>
 
                 <nav><details>
                     <summary>4/7/21 Navigation</summary>
-                    <ul>
-                        <li><a href="#4/7/21_title">Title</a></li>
-                        <li><a href="#4/7/21_happening">What's Been Happening Today?</a></li>
-                        <li><a href="#4/7/21_next">What's Coming Up Next</a></li>
-                        <li><a href="#4/7/21_wisdom">Parting Wisdom</a></li>
-                    </ul>
+                    <div class = "EntryNav">
+                        <div><a class = "EntryNavItem" href="#4/7/21_title">Title</a></div>
+                        <div><a class = "EntryNavItem" href="#4/7/21_happening">What's Been Happening Today?</a></div>
+                        <div><a class = "EntryNavItem" href="#4/7/21_next">What's Coming Up Next</a></div>
+                        <div><a class = "EntryNavItem" href="#4/7/21_wisdom">Parting Wisdom</a></div>
+                    </div>
                 </details></nav>
 
                 <br>
@@ -50,7 +69,7 @@
                 <br>
 
                 <h3 id = "4/7/21_happening"><strong>What's Been Happening Today</strong></h3>
-                <ul>
+                <ul class = "Unordered">
                     <li>College class at UCSD</li>
                     <li>CSE 110 Lab 2 - pretty fun</li>
                     <li>Fun stuff</li>
@@ -59,7 +78,7 @@
                 <br>
 
                 <h3 id = "4/7/21_next"><strong>What's Coming Up Next</strong></h3>
-                <ol>
+                <ol class = "Ordered">
                     <li>Tutoring CSE 11 <b>@3pm PDT</b></li>
                     <li>SOCI 10 quiz</li>
                     <li>Grind Tapion EZA</li>
@@ -68,7 +87,7 @@
                 <h3 id = "4/7/21_wisdom">Parting Wisdom</h3>
                 <p>For some ending thoughts, I figure I should give some sort of parting wisdom. Today's parting wisdom will be to pick up a hobby/game to destress. I recommed Dragon Ball Z: Dokkan Battle(<i><a href="https://t.co/MTMuNzswsl?amp=1">ドラゴンボールZ：ドッカンバトル</a></i>). It's nearing it's <em>6th year</em> and it's pretty fun to play. The 6 year anniversery will be in July so look forward to it. I've also included a hilarious <a href="https://www.youtube.com/watch?v=aYhAIsGWHDw&list=LL&index=4">song</a> about the game (it's Japanese dubbed). In the mean time enjoy some rain music to also help you destress.</p>
 
-                <a href="https://t.co/MTMuNzswsl?amp=1"><img src = "images/dokkan6th.jpg" alt = "Dokkan6th"></a>
+                <a href="https://t.co/MTMuNzswsl?amp=1"><img class = "Entry" src = "images/dokkan6th.jpg" alt = "Dokkan6th"></a>
 
                 <br>
 
@@ -84,16 +103,16 @@
             <br>
             <hr>
 
-            <section id = "4/6/21">
+            <section class = "JEntry" id = "4/6/21">
                 <h2  id = "4/6/21_title">Getting the Group Together... and Animals! - 4/6/21</h2>
                 
                 <nav><details>
                     <summary>4/6/21 Navigation</summary>
-                    <ul>
-                        <li><a href="#4/6/21_title">Title</a></li>
-                        <li><a href="#4/6/21_happening">What's Been Happening Today?</a></li>
-                        <li><a href="#4/6/21_next">What's Coming Up Next</a></li>
-                        <li><a href="#4/6/21_wisdom">Parting Wisdom</a></li>
+                    <ul class = "EntryNav">
+                        <li><a class = "EntryNavItem" href="#4/6/21_title">Title</a></li>
+                        <li><a class = "EntryNavItem" href="#4/6/21_happening">What's Been Happening Today?</a></li>
+                        <li><a class = "EntryNavItem" href="#4/6/21_next">What's Coming Up Next</a></li>
+                        <li><a class = "EntryNavItem" href="#4/6/21_wisdom">Parting Wisdom</a></li>
                     </ul>
                 </details></nav>
 
@@ -104,7 +123,7 @@
                 <br>
 
                 <h3 id = "4/6/21_happening"><strong>What's Been Happening Today</strong></h3>
-                <ul>
+                <ul  class = "Unordered">
                     <li>Lectures for SOCI 123 and CSE 110</li>
                     <li>Getting into Group 19 and getting into contact with group members</li>
                 </ul>
@@ -112,7 +131,7 @@
                 <br>
 
                 <h3 id = "4/6/21_next"><strong>What's Coming Up Next</strong></h3>
-                <ol>
+                <ol class = "Ordered">
                     <li>Watch Tensura Nikki - it's pretty good</li>
                     <li>Continue Fruits Basket Final Season</li>
                 </ol>
@@ -135,16 +154,16 @@
             <br>
             <hr>
 
-            <section id = "4/5/21">
+            <section class = "JEntry" id = "4/5/21">
                 <h2 id = "4/5/21_title">Re: Starting a New Week From Not 0 - 4/5/21</h2>
                 
                 <nav><details>
                     <summary>4/5/21 Navigation</summary>
-                    <ul>
-                        <li><a href="#4/5/21_title">Title</a></li>
-                        <li><a href="#4/5/21_happening">What's Been Happening Today?</a></li>
-                        <li><a href="#4/5/21_next">What's Coming Up Next</a></li>
-                        <li><a href="#4/5/21_wisdom">Parting Wisdom</a></li>
+                    <ul class = "EntryNav">
+                        <li><a class = "EntryNavItem" href="#4/5/21_title">Title</a></li>
+                        <li><a class = "EntryNavItem" href="#4/5/21_happening">What's Been Happening Today?</a></li>
+                        <li><a class = "EntryNavItem" href="#4/5/21_next">What's Coming Up Next</a></li>
+                        <li><a class = "EntryNavItem" href="#4/5/21_wisdom">Parting Wisdom</a></li>
                     </ul>
                 </details></nav>
 
@@ -155,7 +174,7 @@
                 <br>
 
                 <h3 id = "4/5/21_happening"><strong>What's Been Happening Today</strong></h3>
-                <ul>
+                <ul  class = "Unordered">
                     <li>Lecture for CSE 130</li>
                     <li>Staff Meeting for CSE 11</li>
                 </ul>
@@ -163,7 +182,7 @@
                 <br>
 
                 <h3 id = "4/5/21_next"><strong>What's Coming Up Next</strong></h3>
-                <ol>
+                <ol class = "Ordered">
                     <li>Watch HigeHiro</li>
                     <li>Prepare for SOCI 10 quiz on Tuesday</li>
                 </ol>
@@ -173,7 +192,7 @@
                 <h3 id = "4/5/21_wisdom">Parting Wisdom</h3>
                 <p>With a title like Re: Starting a New Week From Not 0, you might be expecting me to make a reference to Re:Zero, but I'm not. Instead I want to talk about light novel titles and how they are <em>(probably)</em> misleading. Over in Japan, it seems like the market for light novels is extremely competitive, so I understand why you'd want to have a title that intentionally causes raised eyebrows. But then again, it may be a complete turnoff. In any case, I'd recommend it. It's very wholesome.</p>
 
-                <a href="http://higehiro-anime.com/"><img src = "images/higehiro.png" alt = "higehiro"></a>
+                <a href="http://higehiro-anime.com/"><img class = "Entry" src = "images/higehiro.png" alt = "higehiro"></a>
 
                 <br>
 
